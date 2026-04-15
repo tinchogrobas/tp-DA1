@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tema base para la app (se sobreescribe con Compose, pero necesario para el splash) -->
+    <style name="Theme.VinylCollector" parent="android:Theme.Material.NoActionBar">
+        <item name="android:statusBarColor">#1A1A1A</item>
+        <item name="android:navigationBarColor">#1A1A1A</item>
+    </style>
+
+    <!-- Tema del splash screen -->
+    <style name="Theme.VinylCollector.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">#1A1A1A</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_vinyl</item>
+        <item name="postSplashScreenTheme">@style/Theme.VinylCollector</item>
+    </style>
+</resources>
